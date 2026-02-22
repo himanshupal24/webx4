@@ -8,21 +8,21 @@ export const metadata = {
 
 const plans = [
     {
-        name: "Starter",
-        description: "Perfect for small businesses promoting a service.",
-        features: ["Custom Design", "5 Pages", "SEO Basics", "Contact Form", "Mobile Responsive"],
+        name: "Startup MVP",
+        description: "Perfect for founders looking to validate and launch fast.",
+        features: ["Product Roadmap", "Custom Design", "Core Feature Build", "Waitlist System", "Tech Consulting"],
         popular: false
     },
     {
-        name: "Growth",
-        description: "For growing companies needing more features.",
-        features: ["Premium Animations", "10 Pages", "CMS Integration", "Advanced SEO", "Analytics Setup"],
+        name: "AI & SaaS Suite",
+        description: "Scale your business with intelligent automation and SaaS architecture.",
+        features: ["Full-Stack SaaS", "AI Agent Integration", "Subscription Setup", "Admin Dashboard", "API Development"],
         popular: true
     },
     {
-        name: "Enterprise",
-        description: "Complex web applications and global scale.",
-        features: ["Full Stack App", "User Auth", "Database", "API Integration", "Priority Support", "SLA"],
+        name: "Enterprise Product",
+        description: "Complex platforms and global infrastructure for established companies.",
+        features: ["Scalable Architecture", "Advanced Security", "Custom AI Models", "24/7 Support", "Performance Audit", "SLA"],
         popular: false
     }
 ];

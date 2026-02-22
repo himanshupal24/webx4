@@ -16,13 +16,13 @@ export default function AboutPage() {
                     className="text-center max-w-4xl mx-auto"
                 >
                     <h1 className="text-5xl md:text-8xl font-bold text-white mb-8 tracking-tighter">
-                        We Engineer <br />
+                        Engineering <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-fuchsia-500">
-                            Digital Excellence.
+                            The Next Era.
                         </span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 leading-relaxed font-light">
-                        Webx4 was founded on a simple premise: The web is the new storefront, playground, and meeting room. It deserves to be beautiful.
+                        Webx4 is an AI-first Digital & SaaS Development Studio. We bridge the gap between ambitious ideas and scalable, market-ready tech products.
                     </p>
                 </motion.div>
             </div>

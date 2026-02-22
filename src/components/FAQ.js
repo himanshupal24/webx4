@@ -5,24 +5,24 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
     {
-        question: "Do you build custom designs or use templates?",
-        answer: "We never use pre-made templates. Every project starts with a blank canvas in Figma. We design unique interfaces tailored specifically to your brand identity and business goals, ensuring you stand out from competitors."
+        question: "Do you build custom products or use templates?",
+        answer: "Every product is built from scratch. We don't believe in templates. We engineer bespoke SaaS architectures and AI-native systems tailored to your specific business logic and scaling requirements."
     },
     {
-        question: "How long does a typical project take?",
-        answer: "A standard corporate website typically takes 4-6 weeks from kick-off to launch. Complex E-Commerce stores or custom web applications can take 8-12 weeks depending on key feature requirements."
+        question: "How fast can you build an MVP?",
+        answer: "For startups, speed is life. Our 'Rapid Launch' protocol allows us to deliver high-fidelity, functional MVPs in as little as 4-6 weeks, allowing you to validate your idea with real users as quickly as possible."
     },
     {
-        question: "How do you handle SEO?",
-        answer: "SEO is baked into our code, not an afterthought. We use semantic HTML5, optimize Core Web Vitals, generate dynamic sitemaps, and ensure proper metadata structure. All our sites score 95+ on Google Lighthouse."
+        question: "How does the AI-first approach benefit my business?",
+        answer: "Instead of just building a static interface, we integrate intelligent layers like automated workflows, custom chatbots, and predictive analytics that help you reduce operational overhead and increase user engagement from day one."
     },
     {
-        question: "Do you provide hosting and maintenance?",
-        answer: "Yes. We deploy primarily on Vercel's edge network for global speed. We offer ongoing maintenance packages that include security updates, content changes, and 24/7 monitoring."
+        question: "Do you handle backend scaling?",
+        answer: "Absolutely. We build on serverless and edge-optimized infrastructures like Vercel and AWS, ensuring your product can scale from 100 to 1,000,000 users without any manual intervention or performance degradation."
     },
     {
-        question: "What is your typical budget range?",
-        answer: "Our engagements typically start at 5000 for smaller sites and range up to $50k+ for enterprise platforms. We provide transparent, fixed-price quotes after our initial discovery call."
+        question: "What is your typical engagement model?",
+        answer: "We offer both fixed-price project builds for MVPs and long-term 'Tech Partner' retainers where we act as your dedicated engineering team, constantly iterating and scaling your product."
     }
 ];
 

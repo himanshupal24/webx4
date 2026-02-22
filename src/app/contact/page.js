@@ -70,10 +70,14 @@ export default function ContactPage() {
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-gray-300">Project Type</label>
                                     <select name="type" className="w-full bg-black/50 border border-white/10 rounded-lg p-3 text-white focus:border-violet-500 focus:outline-none transition-colors focus:ring-1 focus:ring-violet-500/50">
-                                        <option>Website Development</option>
-                                        <option>Shopify Store</option>
+                                        <option>SaaS Product Development</option>
+                                        <option>AI & Automation Solutions</option>
+                                        <option>Startup Tech Launch</option>
+                                        <option>Creator Economy Tech</option>
+                                        <option>Web3 & Emerging Tech</option>
+                                        <option>Growth Engineering</option>
                                         <option>Custom Web App</option>
-                                        <option>Marketing / SEO</option>
+                                        <option>Shopify / E-Commerce</option>
                                         <option>Other</option>
                                     </select>
                                 </div>

@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import ServicesSection from "@/components/ServicesSection";
+import WhyWebx4 from "@/components/WhyWebx4";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Link from "next/link";
@@ -19,6 +20,7 @@ export default function Home() {
       </section>
 
       <ServicesSection />
+      <WhyWebx4 />
       <Testimonials />
       <FAQ />
 

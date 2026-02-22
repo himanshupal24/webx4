@@ -1,42 +1,67 @@
 export default function sitemap() {
     const baseUrl = 'https://webx4.vercel.app'; // Replace with actual domain
+    const lastModified = new Date();
 
-    return [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/about`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/services`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/portfolio`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/pricing`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.5,
-        },
-        {
-            url: `${baseUrl}/contact`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.5,
-        },
-    ];
+    const staticRoutes = [
+        '',
+        '/about',
+        '/services',
+        '/portfolio',
+        '/pricing',
+        '/contact',
+        '/blog',
+    ].map(route => ({
+        url: `${baseUrl}${route}`,
+        lastModified,
+        changeFrequency: route === '/blog' || route === '/services' || route === '/portfolio' ? 'weekly' : 'monthly',
+        priority: route === '' ? 1 : 0.8,
+    }));
+
+    const services = [
+        'saas-development',
+        'ai-automation',
+        'startup-launch',
+        'creator-tech',
+        'growth-engineering',
+        'web3-development',
+        'web-development',
+        'shopify-stores',
+        'custom-web-apps',
+        'wordpress-development',
+    ].map(slug => ({
+        url: `${baseUrl}/services/${slug}`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+    }));
+
+    const blogPosts = [
+        'ai-first-saas-strategy-2026',
+        'building-scalable-mvp-6-weeks',
+        'agentic-ai-workflows-2026',
+        'real-world-asset-tokenization',
+        'platform-engineering-for-startups',
+        'finops-cloud-cost-optimization',
+        'edge-computing-ai-latency',
+        'vertical-saas-industry-disruption',
+        'account-abstraction-web3-usage',
+        'quantum-resistant-security-2026',
+        'zero-knowledge-proofs-privacy',
+        'sustainable-ai-energy-optimization',
+        'ai-governance-ethical-frameworks',
+        'multimodal-interfaces-modern-saas',
+        'gitops-ia-maturation-2026',
+        'augmented-scientific-research-ai',
+        'decentralized-identity-frameworks',
+        'micro-saas-niche-problems',
+        'quarterly-tech-retrospective-2025',
+        'usage-based-pricing-models',
+    ].map(slug => ({
+        url: `${baseUrl}/blog/${slug}`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.6,
+    }));
+
+    return [...staticRoutes, ...services, ...blogPosts];
 }

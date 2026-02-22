@@ -4,61 +4,61 @@ import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-const categories = ["All", "Websites", "Web Apps", "E-Commerce"];
+const categories = ["All", "AI & SaaS", "Web Apps", "E-Commerce", "Websites"];
 
 const projects = [
     {
         id: 1,
-        title: "Nexus Finance",
-        category: "Web Apps",
-        desc: "Crypto dashboard processing $2M+ daily volume with sub-millisecond latency.",
-        gradient: "from-blue-900 to-slate-900",
-        tech: ["Next.js", "D3.js", "WebSockets"],
-        size: "large" // spans 2 cols
+        title: "Nexus AI Finance",
+        category: "AI & SaaS",
+        desc: "AI-powered crypto trading dashboard processing $2M+ daily volume with predictive market analytics.",
+        gradient: "from-blue-900 via-indigo-900 to-slate-900",
+        tech: ["Next.js", "Python LLM", "WebSockets"],
+        size: "large"
+    },
+    {
+        id: 7,
+        title: "ContentCopilot",
+        category: "AI & SaaS",
+        desc: "SaaS tool for creators that automates video script generation and social media scheduling using Claude 3.",
+        gradient: "from-fuchsia-900 via-violet-900 to-black",
+        tech: ["LangChain", "Node.js", "Stripe"],
+        size: "small"
     },
     {
         id: 2,
         title: "Lumina Fashion",
         category: "E-Commerce",
-        desc: "Headless storefront that increased conversion rates by 140% post-launch.",
-        gradient: "from-purple-900 via-fuchsia-900 to-black",
+        desc: "Headless storefront that increased conversion rates by 140% post-launch using AI personalization.",
+        gradient: "from-purple-900 via-pink-900 to-black",
         tech: ["Shopify Hydrogen", "React", "Sanity CMS"],
         size: "small"
     },
     {
         id: 3,
-        title: "Orbit AI",
+        title: "Orbit Tech",
         category: "Websites",
-        desc: "Interactive 3D experience that secured $5M in Series A funding.",
+        desc: "Interactive 3D experience for a Silicon Valley SaaS startup that secured $5M in Series A funding.",
         gradient: "from-emerald-900 to-black",
         tech: ["Three.js", "R3F", "Tailwind"],
         size: "small"
     },
     {
         id: 4,
-        title: "Vantage Realty",
+        title: "Vantage ERP",
         category: "Web Apps",
-        desc: "Real estate platform handling 50k+ daily active users with zero downtime.",
+        desc: "Enterprise resource planning platform handling 50k+ daily active users with proprietary automation logs.",
         gradient: "from-orange-900 to-amber-900",
-        tech: ["Mapbox", "Supabase", "React Query"],
+        tech: ["Supabase", "React Query", "PostgreSQL"],
         size: "large"
     },
     {
         id: 5,
-        title: "Echo Audio",
+        title: "Echo Studio",
         category: "E-Commerce",
-        desc: "Minimalist audio brand site that improved session duration by 3x.",
+        desc: "Minimalist audio brand platform with custom subscription models for hardware-as-a-service.",
         gradient: "from-zinc-800 to-black",
         tech: ["Next.js", "Stripe", "Framer Motion"],
-        size: "small"
-    },
-    {
-        id: 6,
-        title: "Zenith Health",
-        category: "Websites",
-        desc: "B2B patient portal reducing administrative overhead by 40%.",
-        gradient: "from-teal-900 to-cyan-900",
-        tech: ["Postgres", "tRPC", "TypeScript"],
         size: "small"
     }
 ];
