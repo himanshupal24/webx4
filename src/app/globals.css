@@ -46,7 +46,12 @@ body {
   }
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 1000px;
+}
+
+/* Ensure Hero section is always visible to avoid LCP issues */
+#hero, .h-screen {
+  content-visibility: visible;
 }

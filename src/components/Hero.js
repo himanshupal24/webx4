@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import ThreeBackground from "./ThreeBackground";
-import ThreeHeroObject from "./ThreeHeroObject";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+
+const ThreeBackground = dynamic(() => import("./ThreeBackground"), { ssr: false });
+const ThreeHeroObject = dynamic(() => import("./ThreeHeroObject"), { ssr: false });
 
 export default function Hero() {
     return (

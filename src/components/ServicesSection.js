@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Globe, ShoppingCart, Code, Layers, Rocket, Bot, Cpu, Link as LinkIcon, Users, TrendingUp } from "lucide-react";
+import { Globe, ShoppingCart, Code, Layers, Rocket, Bot, Cpu, Link as LinkIcon, Users, TrendingUp, Video } from "lucide-react";
 
 const services = [
     {
@@ -92,6 +92,15 @@ const services = [
         href: "/services/wordpress-development",
         shape: "sphere",
         hex: "#f59e0b"
+    },
+    {
+        title: "Premium Video Editing",
+        description: "Professional storytelling through high-end editing, motion graphics, and color grading for modern brands.",
+        icon: Video,
+        color: "from-red-500 to-rose-600",
+        href: "/services/video-editing",
+        shape: "octahedron",
+        hex: "#f43f5e"
     }
 ];
 

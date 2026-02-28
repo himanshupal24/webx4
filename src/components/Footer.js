@@ -43,16 +43,16 @@ export default function Footer() {
                             { name: "SaaS Dev", href: "/services/saas-development" },
                             { name: "AI Solutions", href: "/services/ai-automation" },
                             { name: "Startup Launch", href: "/services/startup-launch" },
-                            { name: "Creator Tech", href: "/services/creator-tech" }
+                            { name: "Video Production", href: "/services/video-editing" }
                         ]
                     },
                     {
                         title: "Expertise",
                         links: [
-                            { name: "Web3", href: "/services/web3-development" },
-                            { name: "Growth Engineering", href: "/services/growth-engineering" },
-                            { name: "Architecture", href: "/services/custom-web-apps" },
-                            { name: "Scaling", href: "/services/saas-development" }
+                            { name: "Web3 & Tech", href: "/services/web3-development" },
+                            { name: "Growth Engine", href: "/services/growth-engineering" },
+                            { name: "Video Strategy", href: "/services/video-editing" },
+                            { name: "Scaling SaaS", href: "/services/saas-development" }
                         ]
                     }
                 ].map((col) => (

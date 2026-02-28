@@ -4,22 +4,18 @@ import WhyWebx4 from "@/components/WhyWebx4";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Link from "next/link";
+import TechMarquee from "@/components/TechMarquee";
+import AIWorkflow from "@/components/AIWorkflow";
+import VideoShowreel from "@/components/VideoShowreel";
 
 export default function Home() {
   return (
     <div className="bg-black min-h-screen selection:bg-purple-500/30">
       <Hero />
-
-      {/* Trust Bar */}
-      <section className="py-10 border-y border-white/5 bg-white/5 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-12 md:gap-20 items-center opacity-60">
-          {["Vercel", "Stripe", "Linear", "Shopify", "Framer"].map(brand => (
-            <span key={brand} className="text-xl font-bold text-white uppercase tracking-widest">{brand}</span>
-          ))}
-        </div>
-      </section>
-
+      <TechMarquee />
+      <AIWorkflow />
       <ServicesSection />
+      <VideoShowreel />
       <WhyWebx4 />
       <Testimonials />
       <FAQ />
@@ -31,7 +27,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">Ready to Scale?</h2>
           <p className="text-xl text-gray-400 mb-10">Get a custom proposal within 24 hours.</p>
           <Link href="/contact">
-            <button className="inline-block px-10 py-5 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform">
+            <button className="inline-block px-10 py-5 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform shadow-2xl shadow-white/10">
               Get Started
             </button>
           </Link>

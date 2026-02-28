@@ -4,7 +4,7 @@ import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-const categories = ["All", "AI & SaaS", "Web Apps", "E-Commerce", "Websites"];
+const categories = ["All", "AI & SaaS", "Web Apps", "E-Commerce", "Websites", "Video Editing"];
 
 const projects = [
     {
@@ -17,12 +17,39 @@ const projects = [
         size: "large"
     },
     {
+        id: 11,
+        title: "EstateFlow CRM",
+        category: "Web Apps",
+        desc: "A custom real-estate management system for a mid-sized agency, featuring automated lead tracking and property matches.",
+        gradient: "from-cyan-900 to-slate-900",
+        tech: ["Next.js", "Firebase", "SendGrid"],
+        size: "small"
+    },
+    {
         id: 7,
         title: "ContentCopilot",
         category: "AI & SaaS",
         desc: "SaaS tool for creators that automates video script generation and social media scheduling using Claude 3.",
         gradient: "from-fuchsia-900 via-violet-900 to-black",
         tech: ["LangChain", "Node.js", "Stripe"],
+        size: "small"
+    },
+    {
+        id: 8,
+        title: "Neon Pulse Brand Film",
+        category: "Video Editing",
+        desc: "High-energy promotional film for a tech-lifestyle brand featuring custom 3D motion graphics and SFX.",
+        gradient: "from-rose-900 via-red-900 to-black",
+        tech: ["Premiere Pro", "After Effects", "DaVinci Resolve"],
+        size: "small"
+    },
+    {
+        id: 12,
+        title: "Zenith Coaching",
+        category: "Websites",
+        desc: "Responsive marketing site for a fitness coach with complex animation integration and a custom workout portal.",
+        gradient: "from-orange-800 via-amber-900 to-black",
+        tech: ["Tailwind", "Framer Motion", "Supabase"],
         size: "small"
     },
     {
@@ -35,12 +62,39 @@ const projects = [
         size: "small"
     },
     {
+        id: 13,
+        title: "Nordic Coffee Co.",
+        category: "E-Commerce",
+        desc: "Curated Shopify experience for a specialty roastery with a custom subscription engine and flavor-profile quiz.",
+        gradient: "from-stone-800 to-black",
+        tech: ["Shopify Liquid", "React", "Klaviyo"],
+        size: "large"
+    },
+    {
+        id: 9,
+        title: "Visionary Keynote Series",
+        category: "Video Editing",
+        desc: "Post-production for a 12-part masterclass series with advanced color grading and multi-cam editing.",
+        gradient: "from-blue-800 via-slate-900 to-black",
+        tech: ["DaVinci Resolve", "Color Grading", "Multi-cam"],
+        size: "large"
+    },
+    {
         id: 3,
         title: "Orbit Tech",
         category: "Websites",
         desc: "Interactive 3D experience for a Silicon Valley SaaS startup that secured $5M in Series A funding.",
         gradient: "from-emerald-900 to-black",
         tech: ["Three.js", "R3F", "Tailwind"],
+        size: "small"
+    },
+    {
+        id: 14,
+        title: "SkillHive platform",
+        category: "AI & SaaS",
+        desc: "An internal learning management system using OpenAI to generate personalized study paths for employees.",
+        gradient: "from-indigo-900 via-blue-900 to-black",
+        tech: ["Python", "FastAPI", "React"],
         size: "small"
     },
     {
@@ -53,6 +107,24 @@ const projects = [
         size: "large"
     },
     {
+        id: 15,
+        title: "The DevLog Podcast",
+        category: "Video Editing",
+        desc: "Full post-production pipeline for a weekly developer podcast, including audio cleanup and YouTube-ready visuals.",
+        gradient: "from-zinc-900 via-rose-900 to-black",
+        tech: ["Adobe Audition", "Premiere", "AI Voice Fix"],
+        size: "small"
+    },
+    {
+        id: 10,
+        title: "Aesthetic Reel Kit",
+        category: "Video Editing",
+        desc: "Viral-engineered short-form content strategy and editing for a global fitness influencer brand.",
+        gradient: "from-amber-700 via-orange-900 to-black",
+        tech: ["CapCut Pro", "Mobile Optimization", "Viral Hooks"],
+        size: "small"
+    },
+    {
         id: 5,
         title: "Echo Studio",
         category: "E-Commerce",
@@ -60,6 +132,33 @@ const projects = [
         gradient: "from-zinc-800 to-black",
         tech: ["Next.js", "Stripe", "Framer Motion"],
         size: "small"
+    },
+    {
+        id: 17,
+        title: "Aura Skincare",
+        category: "E-Commerce",
+        desc: "A clean, minimalist Shopify store for a boutique skincare brand focusing on high-conversion product pages.",
+        gradient: "from-rose-50 to-rose-200 text-rose-900",
+        tech: ["Shopify", "Tailwind CSS", "SEO"],
+        size: "small"
+    },
+    {
+        id: 18,
+        title: "TechPulse Blog",
+        category: "Websites",
+        desc: "A high-performance content hub for a tech news outlet, optimized for Core Web Vitals and ad revenue.",
+        gradient: "from-slate-800 to-black",
+        tech: ["Next.js", "Contentful", "Plausible"],
+        size: "small"
+    },
+    {
+        id: 16,
+        title: "Nova Dashboard",
+        category: "Web Apps",
+        desc: "Internal sales and performance tracking dashboard for a regional manufacturing company.",
+        gradient: "from-emerald-800 via-teal-900 to-black",
+        tech: ["Vue.js", "D3.js", "Express"],
+        size: "large"
     }
 ];
 
