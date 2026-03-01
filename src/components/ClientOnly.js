@@ -8,7 +8,7 @@ const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton"), { ss
 export default function ClientOnly() {
     return (
         <>{/* Slide-in or persistent client-only UI */}
-            <WhatsAppButton />
+            {/* <WhatsAppButton /> */}
             <CustomCursor />
             <PageProgressBar />
         </>
